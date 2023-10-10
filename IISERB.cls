@@ -128,38 +128,68 @@ pdfsubject={Mathematics}%
 		\begin{center}
 		%	\begin{doublespace}
 				%	\doublespacing
-				\textbf{{\LARGE{\thesistitle}}} \\
+				{\fontfamily{qpl}\selectfont
+                                 \LARGE{\textbf{\thesistitle}}}\\
 				\ \\
 				\ \\
-			\large{A thesis submitted in partial fulfilment of the requirements \\
-				for the award of the degree of} \\ \vspace{0.6cm}
-				\large{\textbf{DOCTOR OF PHILOSOPHY}}
-				\vspace{0.5cm}
+			{\fontfamily{phv}\selectfont
+                          \large{A thesis submitted in partial fulfilment of the requirements \\
+                                 \vspace{0.2cm}
+				for the award of the degree of} }\\ \vspace{1cm}
+				{\fontfamily{phv}\selectfont
+                                  \large{\textbf{DOCTOR OF PHILOSOPHY}}
+                                  }
+				\vspace{1.2cm}
 				
 			\large{{by}}
 
-			\vspace{0.5cm}
+			\vspace{0.8cm}
 
-				\large{\textbf{\MakeUppercase{ \studentname}}} \\
-				\normalsize{\textbf{\studentrollno}} \\
+				{\fontfamily{phv}\selectfont
+                                \large{\textbf{\MakeUppercase{ \studentname}}} }\\
+                                \vspace{0.3cm}
+				{\fontfamily{bodoni-mt-condensed}\selectfont
+				\bf{\studentrollno} }\\
 				%\normalsize{\textit{Under the guidance of}} \\
 				%\large{\textbf{\MakeUppercase{\advisorname}}}
 		%	\end{doublespace}
-			\vfill
-			\centerline{\includegraphics[width=6cm]{iiserb_logo.png}}
+			%\vfill
+                         \vspace{1.8cm}
+			\centerline{\includegraphics[width=4cm]{iiserb_logo.png}}
 			\bigskip
 			
-			\bigskip
 			
-			\large{to the}\\ \vspace{0.3cm}
-			\textbf{\large{DEPARTMENT OF \MakeUppercase{\subject} \\ 
-				\large{{\mbox{INDIAN INSTITUTE OF SCIENCE EDUCATION AND} RESEARCH BHOPAL}}}\\ %Flows onto two lines
-				\normalsize{BHOPAL - 462066}} \\ 
+			
+			\large{to the}\\ \vspace{0.5cm}
+			{\fontfamily{phv}\selectfont
+                            \large{DEPARTMENT OF \MakeUppercase{\subject} }\\ 
+                                  \vspace{0.5cm}
+                              {\fontfamily{Bodoni-MT-Condensed}\selectfont
+			       \bf{\large{{\mbox{\bfseries  INDIAN INSTITUTE OF SCIENCE EDUCATION AND} \\RESEARCH BHOPAL}}}\\ %Flows onto two lines
+				\normalsize{Bhopal -- 462066}}} \\ 
 			\ \\
-			{\thesisdate}
+                        {\fontfamily{Bodoni-MT-Condensed}\selectfont  
+			{\thesisdate}}
 		\end{center}
 	\end{titlepage}
 }
 
+
 %=========================================================================
 
+
+%%%% toc %%%%
+\usepackage{tocloft}
+\setlength{\cftchapnumwidth}{2.25cm}
+\renewcommand{\cftchappresnum}{Chapter~}
+\renewcommand{\cftchapaftersnum}{:~~}
+\renewcommand{\cftchapaftersnumb}{}
+
+%%%%% Chapter titles  %%%%%%%%%%%%
+
+\newcommand*{\justifyheading}{\center}%
+\titleformat{\chapter}[display]{\normalfont\large\bfseries\justifyheading}{CHAPTER~\large\thechapter}%
+{10pt}{\normalfont \bfseries \Large \MakeUppercase}%
+  \titlespacing*{\chapter}{0pt}{-50pt}{40pt}
+
+ 

@@ -11,17 +11,22 @@ The mathematics related changes are done by Rohit Dilip Holkar.
 The formatting related contents (packages, custom layout, fonts, etc.) are now part of the IISERB.cls class file, which also contains the title page layout. 
 All you have to do is enter your details in the individual details section in thesis.tex and edit included files. 
 
-This version: 1.0.1
+This version: 1.0.2
+
+Update: 10 October 2023.
+
+What is new: The title page and fonts there,  ToC and chapter headers modified as per
+DoAA requirements. Style file for package tocloft added.
+Thanks to Md Amir Hossain for designing the title page.
+
+Modified and maintained for mathematics: Rohit Dilip Holkar.
+
+Contact: rholkar@iiserb.ac.in
 
 Created by: Sandeep Aashish
 
 Contact: sandeepaashish@hotmail.com
 
-Modified for mathematics: Rohit Dilip Holkar
-
-Contact: rholkar@iiserb.ac.in
-
-Date created: April 23, 2020
 
 
 --------------------COMPILING INSTRUCTIONS---------------------------------
